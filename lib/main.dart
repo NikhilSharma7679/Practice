@@ -1,0 +1,29 @@
+import 'package:experiment/Ui/LoginView/LoginView.dart';
+import 'package:experiment/app/app.locator.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+setupLocator();
+  runApp(const MyApp());
+
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Gozito',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: Loginview(),
+    );
+  }
+}
+
