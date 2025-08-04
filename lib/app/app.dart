@@ -7,8 +7,6 @@ import '../Ui/LoginView/LoginView.dart';
 
 @StackedApp(routes: [
 MaterialRoute(page: Loginview),
-
-
 ],
 
 dependencies: [
