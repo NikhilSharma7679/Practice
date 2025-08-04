@@ -30,7 +30,6 @@ class _LoginviewState extends State<Loginview> {
         ),
 body: Center(
   child: SingleChildScrollView(
-
     child: Column(
       children: [
         Text("Email",style: TextStyle(letterSpacing: 1,wordSpacing: 1,fontSize: 15,color: Colors.black
