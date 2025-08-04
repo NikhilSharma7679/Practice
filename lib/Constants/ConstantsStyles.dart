@@ -10,10 +10,7 @@ centerTitle: true,
   leading: IconButton(onPressed: () {
 
   }, icon: Icon(CupertinoIcons.back,color: Colors.white,)),
-
-
 );
-
 const kInputDecoration = InputDecoration(
   contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
   border: OutlineInputBorder(
