@@ -23,7 +23,7 @@ const kInputDecoration = InputDecoration(
   ),
   focusedBorder: OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(22)),
-    borderSide: BorderSide(color: Colors.blueAccent, width: 0.5),
+    borderSide: BorderSide(color: Colors.blue, width: 0.5),
   ),
   filled: true,
   fillColor: Color(0x80FFFFFF),// 50% transparent white
@@ -33,4 +33,18 @@ const kInputDecoration = InputDecoration(
 const kTextFieldTextStyle = TextStyle(
   fontSize: 16,
   color: Colors.black87,
+);
+const kBlueButtonStyle = ButtonStyle(
+
+    backgroundColor: MaterialStatePropertyAll<Color>(Colors.blue),
+  foregroundColor: MaterialStatePropertyAll<Color>(Colors.white),
+  padding: MaterialStatePropertyAll<EdgeInsets>(
+    EdgeInsets.symmetric(vertical: 14, horizontal: 24),
+  ),
+  shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
+    RoundedRectangleBorder(
+      borderRadius: BorderRadius.all(Radius.circular(12)),
+    ),
+  ),
+  elevation: MaterialStatePropertyAll<double>(0),
 );

@@ -14,11 +14,7 @@ dependencies: [
   LazySingleton(classType: BottomSheetService),
   LazySingleton(classType: DialogService),
   LazySingleton(classType: SnackbarService),
-
-
 ],
-
-
 )
 
 class AppSetup {}
