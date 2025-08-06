@@ -12,21 +12,23 @@ centerTitle: true,
   }, icon: Icon(CupertinoIcons.back,color: Colors.white,)),
 );
 const kInputDecoration = InputDecoration(
+
   contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
   border: OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(22)),
-    borderSide: BorderSide(color: Colors.blue),
+    borderSide: BorderSide(color: Colors.black12),
   ),
   enabledBorder: OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(22)),
-    borderSide: BorderSide(color: Colors.blueGrey),
+    borderSide: BorderSide(color: Colors.black12),
   ),
   focusedBorder: OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(22)),
     borderSide: BorderSide(color: Colors.blue, width: 0.5),
   ),
   filled: true,
-  fillColor: Color(0x80FFFFFF),// 50% transparent white
+  fillColor: Color(0xFFFFFFFF),// 50% transparent white
+
 
     hintStyle: TextStyle(color: Colors.grey),
 );
