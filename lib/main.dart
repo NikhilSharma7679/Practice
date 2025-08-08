@@ -1,6 +1,9 @@
 import 'package:experiment/Ui/LoginView/LoginView.dart';
 import 'package:experiment/app/app.locator.dart';
 import 'package:flutter/material.dart';
+import 'package:stacked_services/stacked_services.dart';
+
+import 'app/app.router.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +25,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Loginview(),
+      navigatorKey: StackedService.navigatorKey,
+      onGenerateRoute: StackedRouter().onGenerateRoute,
     );
   }
 }

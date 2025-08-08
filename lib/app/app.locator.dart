@@ -13,6 +13,7 @@ import 'package:stacked_services/src/snackbar/snackbar_service.dart';
 import 'package:stacked_shared/stacked_shared.dart';
 
 final locator = StackedLocator.instance;
+
 Future<void> setupLocator({
   String? environment,
   EnvironmentFilter? environmentFilter,
@@ -20,6 +21,7 @@ Future<void> setupLocator({
 // Register environments
   locator.registerEnvironment(
       environment: environment, environmentFilter: environmentFilter);
+
 // Register dependencies
   locator.registerLazySingleton(() => NavigationService());
   locator.registerLazySingleton(() => BottomSheetService());
