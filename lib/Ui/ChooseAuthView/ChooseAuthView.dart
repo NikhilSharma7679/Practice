@@ -49,6 +49,8 @@ class ChooseAuthScreen extends StatelessWidget {
                           ],
                         )
 
+
+
                     ),
                     TextSpan(
                         text: "PERFORMENCE",
