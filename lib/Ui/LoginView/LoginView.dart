@@ -1,3 +1,5 @@
+import 'package:experiment/Ui/PlayerHomepage/PlayerHomeView.dart';
+import 'package:experiment/Ui/PlayerUI/PlayerHomepage/PlayerHomeView.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -21,6 +23,7 @@ class _LoginviewState extends State<Loginview> {
   void _login() {
     if (_formKey.currentState!.validate()) {
       print("Logging in with ${emailController.text}");
+      Navigator.push(context, MaterialPageRoute(builder: (context) => Playerhomeview(),));
       // 🔹 API call here
     }
   }
