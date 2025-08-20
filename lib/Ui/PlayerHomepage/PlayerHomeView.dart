@@ -283,6 +283,7 @@ class _TrainingPageViewState extends State<TrainingPageView> {
         });
       },
       child: Container(
+
         margin: const EdgeInsets.only(right: 8),
         padding: const EdgeInsets.symmetric(horizontal: 16),
         decoration: BoxDecoration(
@@ -292,6 +293,7 @@ class _TrainingPageViewState extends State<TrainingPageView> {
         ),
         alignment: Alignment.center,
         child: Text(
+
           text,
           style: TextStyle(
             color: selected ? Colors.blue : Colors.black,
