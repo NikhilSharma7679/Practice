@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
+   import 'package:flutter/material.dart';
 
-class Playerhomeview extends StatefulWidget {
-  Playerhomeview({super.key});
+class PlayerHomeView extends StatefulWidget {
+  PlayerHomeView({super.key});
 
   @override
-  State<Playerhomeview> createState() => _PlayerhomeviewState();
+  State<PlayerHomeView> createState() => _PlayerHomeViewState();
 }
 
-class _PlayerhomeviewState extends State<Playerhomeview> {
+class _PlayerHomeViewState extends State<PlayerHomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
