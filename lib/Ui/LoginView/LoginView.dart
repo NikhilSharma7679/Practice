@@ -23,7 +23,7 @@ class _LoginviewState extends State<Loginview> {
   void _login() {
     if (_formKey.currentState!.validate()) {
       print("Logging in with ${emailController.text}");
-      Navigator.push(context, MaterialPageRoute(builder: (context) => Playerhomeview(),));
+      Navigator.push(context, MaterialPageRoute(builder: (context) => PlayerHomeView(),));
       // 🔹 API call here
     }
   }
