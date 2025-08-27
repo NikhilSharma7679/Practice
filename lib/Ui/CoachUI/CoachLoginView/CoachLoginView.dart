@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../../PlayerHomepage/PlayerHomeView.dart';
+import '../../PlayerUI/PlayerHomepage/PlayerHomeView.dart';
+
 class CoachLoginview extends StatefulWidget {
   const CoachLoginview({Key? key}) : super(key: key);
 
@@ -22,6 +25,7 @@ class _CoachLoginviewState extends State<CoachLoginview> {
   void _login() {
     if (_formKey.currentState!.validate()) {
       print("Logging in with ${emailController.text}");
+
       // 🔹 API call here
     }
   }
@@ -281,7 +285,10 @@ class _CoachLoginviewState extends State<CoachLoginview> {
                         width: double.infinity,
                         height: h * 0.055,
                         child: ElevatedButton(
-                          onPressed: _login,
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => TrainingPageView(),));
+                          },
+                          // onPressed: _login,
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFF7DFF64),
                             shape: RoundedRectangleBorder(
