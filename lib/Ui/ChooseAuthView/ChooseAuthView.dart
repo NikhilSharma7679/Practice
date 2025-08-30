@@ -16,8 +16,6 @@ class _ChooseAuthScreenState extends State<ChooseAuthScreen> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-
-    // ✅ Set system status bar style
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
@@ -25,7 +23,6 @@ class _ChooseAuthScreenState extends State<ChooseAuthScreen> {
         statusBarBrightness: Brightness.dark,
       ),
     );
-
     return ViewModelBuilder<ChooseAuthViewModel>.reactive(
       viewModelBuilder: () => ChooseAuthViewModel(),
       builder: (context, model, child) {
