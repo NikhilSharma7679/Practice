@@ -6,9 +6,9 @@ class CoachLoginViewModel{
   final NavigationService _navigationService = locator<NavigationService>();
 
 
-  void navigateToCoachHome()
-  {
-
+  Future<void> navigateToCoachHome()
+  async {
+  // await _navigationService.navigate;
   }
 
 }
