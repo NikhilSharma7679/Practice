@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../TrainingPageview/TraingPageview.dart';
+
 import '../DiscoverPageView/DiscoverPageView.dart';
 import '../ReportPageView/ReportPageView.dart';
 
@@ -19,10 +19,10 @@ class _SettingspageviewState extends State<Settingspageview> {
 
     switch (index) {
       case 0:
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => TrainingPageView()),
-        );
+        // Navigator.pushReplacement(
+        //   context,
+        //   MaterialPageRoute(builder: (context) => TrainingPageView()),
+        // );
         break;
       case 1:
         Navigator.pushReplacement(
