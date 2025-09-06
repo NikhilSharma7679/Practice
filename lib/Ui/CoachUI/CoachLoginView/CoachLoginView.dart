@@ -1,9 +1,12 @@
+import 'package:experiment/Ui/PlayerUI/DiscoverPageView/DiscoverPageView.dart';
+import 'package:experiment/Ui/PlayerUI/ReportPageView/ReportPageView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../PlayerHomepage/PlayerHomeView.dart';
 import '../../PlayerUI/PlayerHomepage/PlayerHomeView.dart';
+import '../CoachHomeView/CoachHomeView.dart';
 
 class CoachLoginview extends StatefulWidget {
   const CoachLoginview({Key? key}) : super(key: key);
@@ -286,9 +289,8 @@ class _CoachLoginviewState extends State<CoachLoginview> {
                         height: h * 0.055,
                         child: ElevatedButton(
                           onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => TrainingPageView(),));
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => CoachHomeView(),));
                           },
-                          // onPressed: _login,
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFF7DFF64),
                             shape: RoundedRectangleBorder(
@@ -303,8 +305,6 @@ class _CoachLoginviewState extends State<CoachLoginview> {
                         ),
                       ),
                       SizedBox(height: h * 0.035),
-
-                      // OR Divider
                       Row(
                         children: [
                           Expanded(
