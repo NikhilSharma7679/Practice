@@ -266,13 +266,18 @@ class _TrainingPageViewState extends State<TrainingPageView> {
         onTap: _onItemTapped,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.fitness_center), label: "Training"),
+
           BottomNavigationBarItem(icon: Icon(Icons.explore), label: "Discover"),
+
           BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: "Report"),
+
           BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
         ],
       ),
     );
   }
+
+
 
   Widget _buildBodyFocusButton(String text) {
     bool selected = _selectedBodyFocus == text;
